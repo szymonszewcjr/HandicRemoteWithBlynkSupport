@@ -112,7 +112,7 @@ BLYNK_WRITE(V0) {                               // If virtual blynk pin is 0 sen
     }
   }
 
-BLYNK_WRITE(V1) {  // Power button
+BLYNK_WRITE(V1) {  // guzik input / source
     if (param.asInt() == 0) {
     sendrc5(input);
     indicate();
@@ -120,7 +120,7 @@ BLYNK_WRITE(V1) {  // Power button
   }
 
 
-BLYNK_WRITE(V2) {  // Power button
+BLYNK_WRITE(V2) {  // volume up
     if (param.asInt() == 0) {
     sendrc5(volup);
     indicate();
@@ -128,7 +128,7 @@ BLYNK_WRITE(V2) {  // Power button
   }
 
 
-BLYNK_WRITE(V3) {  // Power button
+BLYNK_WRITE(V3) {  // volume down
     if (param.asInt() == 0) {
     sendrc5(voldown);
     indicate();
@@ -136,7 +136,7 @@ BLYNK_WRITE(V3) {  // Power button
   }
 
 
-BLYNK_WRITE(V4) {  // Power button
+BLYNK_WRITE(V4) {  // channel up
     if (param.asInt() == 0) {
     sendrc5(chup);
     indicate();
@@ -144,7 +144,7 @@ BLYNK_WRITE(V4) {  // Power button
   }
 
 
-BLYNK_WRITE(V5) {  // Power button
+BLYNK_WRITE(V5) {  // channel down
     if (param.asInt() == 0) {
     sendrc5(chdown);
     indicate();
@@ -152,9 +152,123 @@ BLYNK_WRITE(V5) {  // Power button
   }
 
 
-BLYNK_WRITE(V6) {  // Power button
+BLYNK_WRITE(V6) {  // guzik mute
     if (param.asInt() == 0) {
     sendrc5(mute);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V7) {  // guzik menu
+    if (param.asInt() == 0) {
+    sendrc5(menu);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V8) {  // guzik ok
+    if (param.asInt() == 0) {
+    sendrc5(okbtn);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V9) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(up);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V10) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(down);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V11) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(right);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V12) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(left);
+    indicate();
+    }
+  }
+///numpad zostal 
+
+BLYNK_WRITE(V13) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num1);
+    indicate();
+    }
+  }
+
+
+BLYNK_WRITE(V14) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num2);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V15) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num3);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V16) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num4);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V17) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num5);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V18) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num6);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V19) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num7);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V20) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num8);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V21) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num9);
+    indicate();
+    }
+  }
+
+BLYNK_WRITE(V22) {  // Power button
+    if (param.asInt() == 0) {
+    sendrc5(num0);
     indicate();
     }
   }
